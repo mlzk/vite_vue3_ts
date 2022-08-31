@@ -10,4 +10,9 @@ export default defineComponent({
 })
 </script>
 
-<style></style>
+<style>
+#app {
+  height: 100vh;
+  overflow: auto;
+}
+</style>

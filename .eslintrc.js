@@ -25,6 +25,12 @@ module.exports = {
   // eslint-plugin-vue @typescript-eslint/eslint-plugin eslint-plugin-prettier的缩写
   plugins: ['vue', '@typescript-eslint', 'prettier'],
   rules: {
+    'vue/comment-directive': [
+      'error',
+      {
+        reportUnusedDisableDirectives: false,
+      },
+    ],
     '@typescript-eslint/ban-ts-ignore': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
@@ -37,7 +43,7 @@ module.exports = {
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     'no-var': 'error',
-    'prettier/prettier': 'error',
+    'prettier/prettier': 'warn',
     // 禁止出现console
     'no-console': 'warn',
     // 禁用debugger

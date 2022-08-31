@@ -1,0 +1,78 @@
+{
+  // #值设置为true时，每次保存的时候自动格式化；值设置为false时，代码格式化请按shift+alt+F
+  "editor.formatOnSave": true,
+  //设置tab的缩进为2
+  "editor.tabSize": 2,
+  // #每次保存的时候将代码按eslint格式进行修复
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  //docs 注释插件配置
+  "docthis.authorName": "flycat21 zikang.liu@waytous.com",
+  "docthis.includeAuthorTag": true,
+  "docthis.includeDescriptionTag": true,
+  "docthis.enableHungarianNotationEvaluation": true,
+  "docthis.inferTypesFromNames": true,
+
+  //  #让函数(名)和后面的括号之间加个空格
+  // "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.format.enable": false,
+  "typescript.format.enable": false,
+  // 关闭vetur的js/ts/html的formatter。html用eslint-plugin-vue格式化。
+  // js/ts程序用eslint，防止vetur中的prettier与eslint格式化冲突
+  "eslint.format.enable": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  // 格式化stylus, 需安装Manta's Stylus Supremacy插件
+  "stylusSupremacy.insertColons": false, // 是否插入冒号
+  "stylusSupremacy.insertSemicolons": false, // 是否插入分号
+  "stylusSupremacy.insertBraces": false, // 是否插入大括号
+  "stylusSupremacy.insertNewLineAroundImports": false, // import之后是否换行
+  "stylusSupremacy.insertNewLineAroundBlocks": false,
+
+  "files.autoSave": "off",
+  "files.exclude": {
+    "**/.idea": true
+  },
+  "explorer.confirmDelete": false,
+
+  "stylelint.validate": ["html", "vue", "js", "scss"],
+  // 添加 vue 支持
+  "eslint.validate": ["javascript", "vue", "html"],
+  "files.eol": "\n",
+  "workbench.colorTheme": "Dracula", // 需要安装 Dracula
+  // 将json文件识别为jsonc格式
+  "files.associations": {
+    "*.json": "jsonc"
+  },
+  "editor.guides.bracketPairs": true,
+  "cSpell.words": ["webfont"],
+  // stylelint配置
+  "stylelint.enable": true,
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "[scss]": {
+    "editor.formatOnSave": true
+  }
+}

@@ -2,6 +2,7 @@
   <div class="test">用户名:{{ mainStore.name }}<br />长度:{{ mainStore.nameLength }}</div>
   <hr />
   <button @click="updateName">修改store中的name</button>
+  <dv-button type="primary">secondary</dv-button>
   <hr />
 
   <n-button>naive-ui</n-button>
