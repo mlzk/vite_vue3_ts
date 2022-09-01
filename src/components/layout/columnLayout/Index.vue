@@ -51,7 +51,6 @@ body {
   }
   .column-content {
     width: auto;
-    width: 10px;
     margin-left: 220px;
     padding: 20px;
     overflow: hidden;
