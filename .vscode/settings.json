@@ -1,33 +1,31 @@
 {
   // #值设置为true时，每次保存的时候自动格式化；值设置为false时，代码格式化请按shift+alt+F
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   //设置tab的缩进为2
   "editor.tabSize": 2,
   // #每次保存的时候将代码按eslint格式进行修复
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
-    "source.fixAll.stylelint": true
+    // 开启stylelint自动修复
+    "source.fixAll.stylelint": false
   },
   "editor.quickSuggestions": {
     "strings": true
   },
-  //docs 注释插件配置
-  "docthis.authorName": "flycat21 zikang.liu@waytous.com",
-  "docthis.includeAuthorTag": true,
-  "docthis.includeDescriptionTag": true,
-  "docthis.enableHungarianNotationEvaluation": true,
-  "docthis.inferTypesFromNames": true,
-
   //  #让函数(名)和后面的括号之间加个空格
   // "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "javascript.format.enable": false,
   "typescript.format.enable": false,
-  // 关闭vetur的js/ts/html的formatter。html用eslint-plugin-vue格式化。
-  // js/ts程序用eslint，防止vetur中的prettier与eslint格式化冲突
+
   "eslint.format.enable": true,
+
+  "prettier.configPath": ".prettierrc",
   "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
@@ -43,12 +41,6 @@
   "[vue]": {
     "editor.defaultFormatter": "Vue.volar"
   },
-  // 格式化stylus, 需安装Manta's Stylus Supremacy插件
-  "stylusSupremacy.insertColons": false, // 是否插入冒号
-  "stylusSupremacy.insertSemicolons": false, // 是否插入分号
-  "stylusSupremacy.insertBraces": false, // 是否插入大括号
-  "stylusSupremacy.insertNewLineAroundImports": false, // import之后是否换行
-  "stylusSupremacy.insertNewLineAroundBlocks": false,
 
   "files.autoSave": "off",
   "files.exclude": {
@@ -56,7 +48,7 @@
   },
   "explorer.confirmDelete": false,
 
-  "stylelint.validate": ["html", "vue", "js", "scss"],
+
   // 添加 vue 支持
   "eslint.validate": ["javascript", "vue", "html"],
   "files.eol": "\n",
@@ -68,7 +60,10 @@
   "editor.guides.bracketPairs": true,
   "cSpell.words": ["webfont"],
   // stylelint配置
-  "stylelint.enable": true,
+  // "stylelint.enable": true,
+  // 配置stylelint检查的文件类型范围
+  "stylelint.validate": ["html", "vue", "js", "scss","less","postcss"],
+  // 关闭编辑器内置样式检查（避免与stylelint冲突）
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
