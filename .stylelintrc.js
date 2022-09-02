@@ -25,6 +25,15 @@ module.exports = {
         ignorePseudoElements: ['v-deep', ':deep']
       }
     ],
+    // 禁止重复属性的css
+    // "declaration-block-no-duplicate-properties": [
+    //   true,
+    //   {
+    //     "ignore": [
+    //       "consecutive-duplicates-with-different-values"
+    //     ]
+    //   }
+    // ],
     'number-leading-zero': 'always',
     'no-descending-specificity': null,
     'function-url-quotes': 'always',
