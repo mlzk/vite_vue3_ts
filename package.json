@@ -65,7 +65,7 @@
       "eslint src --fix --ext .ts,.tsx,.vue,.js,.jsx"
     ],
     "*.{vue,scss,sass}": [
-      "stylelint '**/*.{css,scss,sass}' --fix"
+      "stylelint --fix"
     ]
   }
 }
