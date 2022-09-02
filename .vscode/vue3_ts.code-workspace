@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"javascript.format.enable": false,
+		"typescript.format.enable": false,
+		"files.autoSave": "off",
+		"explorer.confirmDelete": false,
+		"workbench.colorTheme": "Dracula",
+		"files.associations": {
+			"*.json": "jsonc"
+		}
+	}
+}

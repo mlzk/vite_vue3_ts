@@ -1,13 +1,13 @@
 {
   // #值设置为true时，每次保存的时候自动格式化；值设置为false时，代码格式化请按shift+alt+F
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   //设置tab的缩进为2
   "editor.tabSize": 2,
   // #每次保存的时候将代码按eslint格式进行修复
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
     // 开启stylelint自动修复
-    "source.fixAll.stylelint": false
+    "source.fixAll.stylelint": true
   },
   "editor.quickSuggestions": {
     "strings": true

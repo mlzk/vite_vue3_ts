@@ -16,8 +16,8 @@ body {
   position: relative;
   box-sizing: border-box;
   height: 100vh;
-  overflow: hidden;
   padding: 0;
+  overflow: hidden;
   font-size: 14px;
   font-family: 'PingFang SC', Arial, 'Microsoft YaHei', sans-serif;
   background: #f6f8f9;

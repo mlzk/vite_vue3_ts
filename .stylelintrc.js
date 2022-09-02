@@ -2,18 +2,18 @@ module.exports = {
   extends: [
     'stylelint-config-standard',
     'stylelint-config-prettier',
-    'stylelint-config-html/vue',
+    // 'stylelint-config-html/vue',
     'stylelint-config-recommended-vue',
     'stylelint-config-standard-scss',
-    'stylelint-config-rational-order'
+    'stylelint-config-rational-order',
   ],
-  plugins: ['stylelint-scss','stylelint-order'],
+  plugins: ['stylelint-scss', 'stylelint-order'],
   overrides: [
     // 扫描.vue/html文件中的<style>标签内的样式
     {
       files: ['**/*.{vue,html}'],
-      customSyntax: 'postcss-html'
-    }
+      customSyntax: 'postcss-html',
+    },
   ],
   customSyntax: 'postcss-html',
   ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.tsx', '**/*.ts', '**/*.json'],
@@ -22,8 +22,8 @@ module.exports = {
     'selector-pseudo-element-no-unknown': [
       true,
       {
-        ignorePseudoElements: ['v-deep', ':deep']
-      }
+        ignorePseudoElements: ['v-deep', ':deep'],
+      },
     ],
     'number-leading-zero': 'always',
     'no-descending-specificity': null,
@@ -42,10 +42,7 @@ module.exports = {
     'no-empty-source': null,
     'selector-class-pattern': null,
     'keyframes-name-pattern': null,
-    'selector-pseudo-class-no-unknown': [
-      true,
-      { ignorePseudoClasses: ['global'] }
-    ],
+    'selector-pseudo-class-no-unknown': [true, { ignorePseudoClasses: ['global'] }],
     'function-no-unknown': null,
     'order/properties-order': [
       'position',
@@ -123,7 +120,7 @@ module.exports = {
       'box-shadow',
       'text-shadow',
       'resize',
-      'transition'
-    ]
-  }
-};
+      'transition',
+    ],
+  },
+}
