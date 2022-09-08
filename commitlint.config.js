@@ -12,7 +12,7 @@
 const types = require('commitlint-config-cz/lib/types')()
 
 module.exports = {
-  extends: ['cz'],
+  extends: ['@commitlint/config-conventional', 'cz'],
   rules: {
     'type-enum': [2, 'always', types],
     'type-case': [0],
