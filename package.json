@@ -10,7 +10,7 @@
     "stylelint:fix": "stylelint --fix",
     "prettier": "prettier --write .",
     "prepare": "husky install",
-    "commit": "npx cz-customizable"
+    "commit": "git add . && cz-customizable"
   },
   "dependencies": {
     "axios": "^0.24.0",
