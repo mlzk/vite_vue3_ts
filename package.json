@@ -74,5 +74,10 @@
     "*.{vue,scss,sass}": [
       "stylelint --fix"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
   }
 }
