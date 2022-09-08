@@ -10,9 +10,10 @@
 // revert：回滚某个更早之前的提交
 // chore：不属于以上类型的其他类型(日常事务)
 const types = require('commitlint-config-cz/lib/types')()
+
 module.exports = {
   extends: ['cz'],
   rules: {
-    'type-enum': types,
+    'type-enum': [2, 'always', types],
   },
 }
