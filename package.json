@@ -12,7 +12,8 @@
     "prepare": "husky install",
     "commit": "git add . && cz-customizable",
     "cz": "git add . && git-cz",
-    "push":"git push origin"
+    "push": "git push origin",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "dependencies": {
     "axios": "^0.24.0",
@@ -38,6 +39,7 @@
     "autoprefixer": "^10.4.0",
     "commitizen": "^4.2.5",
     "commitlint-config-cz": "^0.13.3",
+    "conventional-changelog-cli": "^2.2.2",
     "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^7.0.0",
     "dart-sass": "^1.25.0",
@@ -81,7 +83,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "@commitlint/cz-commitlint"
+      "path": "node_modules/cz-customizable"
     }
   }
 }
