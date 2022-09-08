@@ -10,11 +10,10 @@
     "stylelint:fix": "stylelint --fix",
     "prettier": "prettier --write .",
     "prepare": "husky install",
-    "commit": "cz"
+    "commit": "npx cz-customizable"
   },
   "dependencies": {
     "axios": "^0.24.0",
-    "cz-customizable": "^7.0.0",
     "daisyui-vue": "0.0.1-alpha.3",
     "naive-ui": "^2.21.2",
     "nprogress": "^0.2.0",
@@ -35,6 +34,9 @@
     "@vue/compiler-sfc": "^3.0.5",
     "autoprefixer": "^10.4.0",
     "commitizen": "^4.2.5",
+    "commitlint-config-cz": "^0.13.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^7.0.0",
     "dart-sass": "^1.25.0",
     "eslint": "^8.3.0",
     "eslint-config-prettier": "^8.5.0",
@@ -72,13 +74,5 @@
     "*.{vue,scss,sass}": [
       "stylelint --fix"
     ]
-  },
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-customizable"
-    },
-    "cz-customizable": {
-      "config": "./.cz-config.js"
-    }
   }
 }
