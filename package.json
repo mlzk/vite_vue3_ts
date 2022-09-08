@@ -13,7 +13,7 @@
     "commit": "git add . && cz-customizable",
     "cz": "git add . && git-cz",
     "push": "git push origin",
-    "version": "conventional-changelog -p angular -i CHANGELOG.md -s"
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
   },
   "dependencies": {
     "axios": "^0.24.0",
