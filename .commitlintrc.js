@@ -35,64 +35,63 @@ module.exports = {
 	prompt: {
 		questions: {
 			type: {
-				description: "Select the type of change that you're committing111",
+				description: "选择你要提交的类型",
 				enum: {
 					feat: {
-						description: 'A new feature',
+						description: '新的特性',
 						title: 'Features',
 						emoji: '✨',
 					},
 					fix: {
-						description: 'A bug fix',
+						description: 'Bug 修复',
 						title: 'Bug Fixes',
 						emoji: '🐛',
 					},
 					docs: {
-						description: 'Documentation only changes',
+						description: '文档变更',
 						title: 'Documentation',
 						emoji: '📚',
 					},
 					style: {
 						description:
-							'Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)',
+							'不影响代码含义的更改（空白、格式、缺少分号等）',
 						title: 'Styles',
 						emoji: '💎',
 					},
 					refactor: {
 						description:
-							'A code change that neither fixes a bug nor adds a feature',
+							'代码重构，注意和特性、修复区分开',
 						title: 'Code Refactoring',
 						emoji: '📦',
 					},
 					perf: {
-						description: 'A code change that improves performance',
+						description: '性能提升',
 						title: 'Performance Improvements',
 						emoji: '🚀',
 					},
 					test: {
-						description: 'Adding missing tests or correcting existing tests',
+						description: '增加或改动了测试用例',
 						title: 'Tests',
 						emoji: '🚨',
 					},
 					build: {
-						description:
-							'Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)',
+						description:'构建系统或者依赖变更（构建、脚手架工具等）',
 						title: 'Builds',
 						emoji: '🛠',
 					},
 					ci: {
 						description:
-							'Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)',
+							'更改CI配置文件和脚本（示例范围：Travis、Circle、BrowserStack、SauceLabs）',
 						title: 'Continuous Integrations',
 						emoji: '⚙️',
 					},
 					chore: {
-						description: "Other changes that don't modify src or test files",
+						description: "其它一些不影响业务代码的变动",
 						title: 'Chores',
 						emoji: '♻️',
 					},
 					revert: {
-						description: 'Reverts a previous commit',
+						description: '代码回退',
 						title: 'Reverts',
 						emoji: '🗑',
 					},
@@ -100,34 +99,34 @@ module.exports = {
 			},
 			scope: {
 				description:
-					'What is the scope of this change (e.g. component or file name)',
+					'代码变更的范围（例如组件/文件名/业务模块）',
 			},
 			subject: {
 				description:
-					'Write a short, imperative tense description of the change',
+					'填写简述',
 			},
 			body: {
-				description: 'Provide a longer description of the change',
+				description: '提供更详细的变更说明',
 			},
 			isBreaking: {
-				description: 'Are there any breaking changes?',
+				description: '是否存在破坏性（BREAKING CHANGE）代码更新?',
 			},
 			breakingBody: {
 				description:
-					'A BREAKING CHANGE commit requires a body. Please enter a longer description of the commit itself',
+					'请为本次 BREAKING CHANGE 添加一个简要说明',
 			},
 			breaking: {
-				description: 'Describe the breaking changes',
+				description: '为本次破坏性（BREAKING CHANGE）填写更详细说明',
 			},
 			isIssueAffected: {
-				description: 'Does this change affect any open issues?',
+				description: '本次commit关联是否关联 issues?',
 			},
 			issuesBody: {
 				description:
-					'If issues are closed, the commit requires a body. Please enter a longer description of the commit itself',
+					'如果关联的issue已经关闭，可以针对本次commit 做一个信息补充',
 			},
 			issues: {
-				description: 'Add issue references (e.g. "fix #123", "re #123".)',
+				description: '补充涉及的issues (e.g. "fix #123", "re #123".)',
 			},
 		},
 	},
