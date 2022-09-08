@@ -11,7 +11,8 @@
     "prettier": "prettier --write .",
     "prepare": "husky install",
     "commit": "git add . && cz-customizable",
-    "cz": "git add . && git-cz"
+    "cz": "git add . && git-cz",
+    "push":"git push origin"
   },
   "dependencies": {
     "axios": "^0.24.0",
