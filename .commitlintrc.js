@@ -31,6 +31,14 @@ module.exports = {
 				'test',
 			],
 		],
+    'scope-enum' :[
+			2,
+			'always',
+			[
+				'配置',
+				'业务',
+			],
+		],
 	},
 	prompt: {
 		questions: {
