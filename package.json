@@ -81,7 +81,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "node_modules/cz-customizable"
+      "path": "@commitlint/cz-commitlint"
     }
   }
 }
